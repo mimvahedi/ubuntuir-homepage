@@ -1,0 +1,20 @@
+{
+  "name": "ubuntu-ir",
+  "version": "1.0.0",
+  "description": "ubuntu iranian cummunity website",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "sass --load-path=node_modules src:dist --style=compressed",
+    "watch-css": "npm run build-css && sass --load-path=node_modules -w src/scss:dist/css --style=compressed",
+    "move-assets": "rmdir ./dist/assets && mkdir ./dist/assets && cp ./src/assets/* ./dist/assets"
+  },
+  "keywords": [
+    "ubuntu",
+    "iran"
+  ],
+  "author": "mimv",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "vanilla-framework": "^3.0.1"
+  }
+}
